@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form</title>
+    <style>
+        /* Centering the entire box on the screen */
+        body {
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Styling the "Box" container */
+        .form-box {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for a modern look */
+            width: 100%;
+            max-width: 350px; /* Limits how wide the box can get */
+        }
+
+        h1 {
+            color: blue;
+            text-align: center;
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        label {
+            color: blueviolet;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* Styling the text boxes so they fit nicely inside the container */
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Ensures padding doesn't make inputs overflow */
+        }
+
+        /* Styling the buttons */
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        input[type="submit"] {
+            background-color: blueviolet;
+            color: white;
+            margin-right: 10px;
+        }
+
+        input[type="reset"] {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-box">
+        <h1>Student Registration</h1>
+        
+        <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+
+            <label for="phone">Mobile No.:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <input type="submit" value="Register"> 
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+
+</body>
+</html>
