@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Ragistration Form</title>
+    <!-- link css file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Create Account</h2>
+
+    <!-- success notifcation text -->
+    <div id="successMsg" class="sucess-alert"></div>
+
+    <form id="registrationForm">
+        
+        <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" placeholder="Enter full name">
+            <small class="error-msg"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="text" id="email" placeholder="example@mail.com">
+            <small class="error-msg"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" maxlength="10" placeholder="10 digit number">
+            <small class="error-msg"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Min 6 characters">
+            <small class="error-msg"></small>
+        </div>
+
+        <button type="submit" id="subBtn">Submit</button>
+        <button type="reset" id="rstBtn">Reset</button>
+
+    </form>
+</div>
+
+<!-- javascript file linked at last -->
+<script src="script.js"></script>
+</body>
+</html>

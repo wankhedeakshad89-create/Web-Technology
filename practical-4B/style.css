@@ -1,0 +1,84 @@
+body {
+    background-color: #f0f4f8;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 380px;
+    background: white;
+    margin: 120px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+h2 {
+    color: #1e293b;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+input {
+    width: 70%;
+    padding: 9px;
+    border: 1.5px solid #60a5fa;
+    border-radius: 6px;
+    outline: none;
+}
+
+
+#addBtn {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 9px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#addBtn:hover {
+    background-color: #1d4ed8;
+}
+
+/* task list style */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background: #f8fafc;
+    padding: 10px 14px;
+    margin-top: 8px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #334155;
+    font-size: 15px;
+}
+
+
+.del-btn {
+    background-color: #ef4444;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.del-btn:hover {
+    background-color: #dc2626;
+}
